@@ -1,0 +1,19 @@
+.Seccion2{
+
+    .Aviso{
+
+        @include txtPrimario(white, center);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+    .Aviso2{
+        @include txtPrimario(white, center);
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    
+}

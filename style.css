@@ -1,0 +1,264 @@
+.Seccion2 .Aviso {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Seccion2 .Aviso2 {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: futura-pt;
+  src: url(futura-pt.otf);
+}
+li {
+  float: left;
+  right: 100px;
+}
+
+.Barra {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+.Barra .debian {
+  position: relative;
+  right: 350px;
+  top: -15px;
+  height: 100px;
+  width: 100px;
+}
+.Barra .inicio {
+  position: relative;
+  right: 100px;
+}
+.Barra .bar {
+  position: relative;
+  display: none;
+}
+
+.inicio a {
+  display: flex;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 15px;
+  justify-content: center;
+}
+
+#descuento {
+  display: flex;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 15px;
+  justify-content: center;
+  background-color: #ed1d2d;
+}
+
+.container {
+  position: absolute;
+  left: 75%;
+  top: 3%;
+  padding: 10px;
+}
+
+input {
+  outline: none;
+  box-sizing: border-box;
+  height: 33px;
+  width: 0;
+  padding: 0 19px;
+  color: #000;
+  border-radius: 40px;
+  font-size: 20px;
+  border: 1px solid #ed1d2d;
+  transition: all 0.7s ease;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #ed1d2d;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn i {
+  font-size: 25px;
+  color: black;
+  line-height: 50px;
+  transition: all 0.7s ease;
+}
+
+.container:hover input {
+  width: 350px;
+}
+
+.container:hover i {
+  transform: rotate(-360deg);
+}
+
+.btn:hover {
+  background: red;
+}
+
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-img .box-img:nth-child(1) {
+  grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+.iconos {
+  background: black;
+  padding: 30px;
+  margin: 0;
+}
+
+.icon {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+.icon li.icon1 {
+  color: #e4405f;
+  background: none;
+}
+
+.icon li.icon2 {
+  color: #e52d27;
+}
+
+.icon li.icon6 {
+  color: #55acee;
+}
+
+.Domicilio img {
+  transition: all 300ms;
+  padding: 0%;
+}
+
+.Domicilio img:hover {
+  transform: scale(1.1);
+}
+
+.Seccion1 .Sub1, .Seccion1 .Sub2 {
+  background: linear-gradient(to right, #fd924b, #f73c32, #cf335b, #9240a4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding: 0;
+  margin: 0;
+}
+.Seccion1 .Sub2 {
+  font-size: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: white;
+  }
+  .Barra .container {
+    display: none;
+  }
+  .Barra #debian {
+    position: relative;
+    left: -20px;
+  }
+  .Barra .inicio .li {
+    position: fixed;
+    display: block;
+    margin: 50px 0;
+  }
+  .Domicilio img {
+    width: 412px;
+  }
+  .Comida img {
+    width: 412px;
+  }
+  .Compartir {
+    font-size: 33px;
+  }
+  .Menu p {
+    color: black;
+    font-size: 19px;
+  }
+  #descuento {
+    font-size: 10px;
+    text-align: center;
+  }
+  .Seccion2 .Aviso {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Seccion2 .Aviso2 {
+    color: white;
+    text-align: center;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container-img {
+    width: 70%;
+    max-width: 412px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
